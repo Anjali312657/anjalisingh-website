@@ -1,0 +1,51 @@
+body{
+    background-image:linear-gradient(to bottom, #FFFFFF 30%, #fcc6ff 100%);
+    margin:0px;
+    margin-top:50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#container{
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+    margin-bottom:50px;
+}
+#logo{
+    float:left;
+    width:175px;
+    height:auto;
+}
+#navbar{
+    display:flex;
+    justify-content:right;
+}
+#navbar a{
+    text-decoration:none;
+    color:rgb(60, 60, 60);
+    font-family: 'Bree Serif', serif;
+    font-size:2em;
+    width: 100px;
+    margin:20px;
+    /* height: 100px; */
+    line-height: 50px;
+    display: block;
+
+}
+#navbar a:hover, #navbar #active-nav{
+    border-bottom:2px solid black;
+    color:#fcc6ff;
+    cursor:pointer; 
+}
+#footer{
+    background-color:rgb(60, 60, 60);
+    color:white;
+    height:50px;
+    text-align:center;
+    font-size:0.9em;
+    line-height:50px;
+}
+#footer a{
+    color:white;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anjali Singh | About Page</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href = "main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+
+
+    <meta name = "description" content = "This will be my portfolio that I can submit to companies 
+    for potential career related oppourtinities. This page specifically is to give readers a bit more about who I am, my background, and my interests.
+    This page also allows people to get in touch with me and find my email and linkedin.">
+
+
+    <style>
+        #bio{
+            font-family:'Poiret One', cursive;
+            font-size:1.5em;
+            margin-right:10px;
+            width:600px;
+            margin-bottom:100px;
+        }
+        #me{
+            float:right;
+            width:600px;
+        }
+        #myself{
+            border-radius:50%;
+            margin-top:200px;
+            margin-left:165px;
+            border:7px double #fcc6ff;
+        }
+        #fun{
+            display:flex;
+            align-items:flex-start;
+            justify-content:space-between;
+            font-family:'Poiret One', cursive;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #fun h3{
+            text-align:center;
+        }
+
+        #funheader{
+            text-align:center;
+            font-size:35px;
+            font-family:'Poiret One', cursive;
+        }
+        .freetime{
+            width:200px;
+            height:auto;
+            margin:5px;
+            border:7px double white;
+            box-shadow:10px 5px 5px #fcc6ff;
+            border-radius:10%;
+        }
+        #links{
+            font-family:'Poiret One', cursive;
+            background-color:white;
+            border-radius:20px;
+            border:10px double rgb(60, 60, 60);
+            box-shadow:10px 5px 5px rgb(60, 60, 60);
+            padding:20px;
+        }
+        #links label{
+            font-size:25px;
+        }
+        textarea{
+            width:100%;
+            padding:12px;
+            box-sizing:border-box;
+            border:2px solid #fcc6ff;
+            border-radius:60px;
+        }
+        #intouch{
+            font-size:35px;
+            text-align:center;
+            color:#fbaaff; 
+        }
+        .intouch2{
+            font-size:30px;
+            text-align:center;
+            color:#fbaaff;
+        }
+        .button{
+            border-radius:20px;
+            background-color:#fcc6ff;
+            font-size:30px;
+            margin:10px;
+            font-family:'Poiret One', cursive;
+        }
+        #submit{
+            text-align:center;
+        
+        }
+        .clearfloat{
+            clear:both;
+        }
+        #links button:hover{
+            cursor:pointer; 
+            background-color:#fbaaff; 
+
+        }
+        #sunsets:hover #sunset{
+            transform: scale(2, 2);
+            transition:all 2s ease 0.5s;
+        }
+        #friends:hover #friend{
+            transform: scale(2, 2);
+            transition:all 2s ease 0.5s;
+        }
+        #hikes:hover #hike{
+            transform: scale(2, 2);
+            transition:all 2s ease 0.5s;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <div id = 'container'>
+        <img src = "img/logo.jpg" alt = "logo" id = "logo">
+        
+        <div id = "navbar">
+            <a href="home.html">Home</a>
+            <a id="active-nav" href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+        </div>
+
+        <div class = "clearfloat"></div>
+
+        <div id = "me">
+            <img src = "img/me.jpg" alt = "me" id = "myself">
+        </div>
+
+        
+        <div id = "bio">
+            <h2>Get to Know Me!</h2>
+            <p>Hi! I'm Anjali. I have a passion for tech and data science! Fun fact, I coded this website:)</p>
+
+            <p>I'm originally from Cleveland, Ohio but I am now based in Los Angeles. I'm a recent University of Southern Claifornia graduate.
+                who double majored in Data Science and Cognitive Science. After taking a good mix of computer science, math,
+                psychology, and data science related courses, I am very eager to jump into the tech realm! 
+            </p>
+
+            <p>In my work, I seek to use data to derive insights in order to make smarter data-driven decisions. Data 
+                science allows me to solve anywhere from day-to-day to more complex world problems by presenting useful and enjoyable
+                solutions through technology. The intersection of cognitive science and data science allows me to better my 
+                ability to use, customize, and develop a cognitive approach to problem solving. My interests lie at the interseciton 
+                of multiple fields, including cognitive science, computer science, statistics, and data science. The omnipresent
+                importance of data allows me to integrate myself in these interdisciplinary spaces!   
+            </p>
+
+        </div>
+        <div class = "clearfloat"></div>
+
+
+        <h2 id = "funheader">In my free time, I'm...</h2>
+
+        <div id = "fun">
+
+            <div id="sunsets">
+                <img class = "freetime" id = "sunset" src = "img/sunset.jpg" alt = "sunset">
+                <h3>Watching Sunsets at the Beach</h3>
+            </div>
+
+            <div id = "friends">
+                <img class = "freetime" id = "friend" src = "img/friends.jpg" alt = "friends">
+                <h3>Spending time with friends</h3>
+            </div>
+
+            <div id = "hikes">
+                <img class = "freetime" id = "hike" src = "img/hiking.jpg" alt = "hiking">
+                <h3>Getting my exercise on</h3>
+            </div>
+
+        </div>
+        <div id = "links">
+            <h2 id = "intouch">Get in touch</h2>
+            <h3 class = "intouch2">Or shoot me an email at anjali312657@gmail.com</h3>
+            <h3 class = "intouch2">Connect with me on <a href = "https://www.linkedin.com/in/anjali-singh524" target = "_blank">LinkedIn</a></h3>
+            <form action= "mailto:anjali312657@gmail.com" method="POST" enctype="text/plain">
+                <div>
+                    <label for ="Email">Email:</label>
+                    <textarea id="Email" placeholder="e.g: email@example.com"></textarea>
+                </div>
+
+                <div>
+                    <label for ="Your-Message">Message:</label>
+                    <textarea id="Your-Message" placeholder="Enter text here"></textarea>
+                </div>
+                    
+                <div id = submit>
+                     <button class = "button" type="submit">Submit</button>
+                  </div>
+            </form>
+        </div>
+
+
+    </div>  
+    <div id = "footer">
+        © 2024 Anjali Singh | <a href = "https://www.linkedin.com/in/anjali-singh524" target = "_blank"> LinkedIn</a>
+    </div>
+</body>
+
+
+
+</html>
